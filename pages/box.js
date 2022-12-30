@@ -1,6 +1,7 @@
 import { MuiBox } from "../components/box";
 import styles from "../styles/Home.module.css";
-import { Box, Stack, Grid } from "@mui/system";
+import { Box, Stack } from "@mui/system";
+import { Grid } from "@mui/material";
 
 export default function BoxPage(){
     return(
@@ -30,6 +31,28 @@ export default function BoxPage(){
             </ul>
             </Box>
             </Stack>
+            <Grid container my={4} rowGap={2}>
+                <Grid item xs={12} sm={6}>
+                    <Box bgcolor='primary.light' p={2}>
+                        item1
+                    </Box>
+                </Grid>
+                <Grid xs={12} sm={6}>
+                <Box bgcolor='primary.light' p={2}>
+                        item2
+                    </Box>
+                </Grid>
+                <Grid xs={12} sm={6}>
+                <Box bgcolor='primary.light' p={2}>
+                        item3
+                    </Box>
+                </Grid>
+                <Grid xs={12} sm={6}>
+                <Box bgcolor='primary.light' p={2}>
+                        item4
+                    </Box>
+                </Grid>
+            </Grid>
         </div>
     )
 }
