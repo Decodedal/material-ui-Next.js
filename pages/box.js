@@ -1,11 +1,12 @@
 import { MuiBox } from "../components/box";
 import styles from "../styles/Home.module.css";
 import { Box, Stack } from "@mui/system";
-import { Grid } from "@mui/material";
+import { Grid, Paper } from "@mui/material";
 
 export default function BoxPage(){
     return(
         <div className={styles.container}>
+            <Paper sx={{padding:'32px'}} elevation={4}>
             <Stack sx={{border:'1px solid'}} direction='row' spacing={2}>
           <Box sx={{
             bgcolor:"primary.main",
@@ -53,6 +54,7 @@ export default function BoxPage(){
                     </Box>
                 </Grid>
             </Grid>
+            </Paper>
         </div>
     )
 }
